@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/uikit/uikit-css/uikit.min.css" />
+    <link href="../css/main-css.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+</head>
+<style>
+    .vote-ac1 {
+        font-size: 5rem;
+        position: absolute;
+        color: chocolate;
+        display: none;
+    }
+
+    .vote-ac2 {
+        display: block;
+        animation: bounceIn 1.3s;
+    }
+</style>
+
+<body class="d-flex  justify-content-center align-items-center" style="height:100vh;">
+
+    <div style="background-color: brown;">
+        <div class="d-flex justify-content-center align-items-center" style=" color:#fff;">
+            <p style="font-size:3rem;">5</p>
+            <i id="vote" class="fas fa-times vote-ac1"></i>
+        </div>
+        <button type="button" onclick="myFunctionadd()" class="btn btn-primary">Primary</button>
+    </div>
+
+
+
+    <script>
+        function myFunctionadd() {
+            var element = document.getElementById("vote");
+            element.classList.add("vote-ac2");
+        }
+    </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/uikit/uikit-js/uikit.min.js"></script>
+    <script src="../node_modules/uikit/uikit-js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+
+</html>
